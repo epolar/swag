@@ -46,5 +46,10 @@ type RevValueBase struct {
 type RevValue struct {
 	RevValueBase
 
-	Data int `json:"Data"`
+	Data int     `json:"Data"`
+	Type APIType `json:"type"`
 }
+
+type T uint8
+
+type APIType T
